@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PErcussion intrument</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <button onclick="showPage('home')">หน้าหลัก</button>
+        <button onclick="showPage('เครื่องดนตรี')">เครื่องดนตรี</button>
+        <button onclick="showPage('stats')">สถิติ</button>
+        <button onclick="showPage('ความสำคัญ')">ความสำคัญ</button>
+        <button onclick="showPage('contact')">การติดต่อ</button>
+    </div>
+    
+    <div id="home" class="page active">
+        <div class="hero">
+            <h1>ยินดีต้อนรับ</h1>
+            <p>รวมสถิติและข้อมูลผู้เล่นที่คุณต้องการ</p>
+        </div>
+    </div>
+    <div id="เครื่องดนตรี" class="page">
+        <h1>เครื่องดนตรี:Saner Drum</h1>
+        <div class="player-card">
+            <img src="images/istockphoto-1194155480-612x612.jpg">
+            <h2>Saner drum</h2>
+            <p>เป็นเครื่องดนตรีหลักเป็นที่นิยมในหมู่มาก และเป็นส่วนประกอบสำคัญของกลองชุด</p>
+            
+        </div>
+    </div>
+    <div id="stats" class="page">
+        <h1>สถิติของ LeBron James</h1>
+        <table class="stats-table">
+            <tr>
+                <th>ฤดูกาล</th>
+                <th>ทีม</th>
+                <th>เกม</th>
+                <th>แต้มต่อเกม</th>
+                <th>รีบาวด์</th>
+                <th>แอสซิสต์</th>
+            </tr>
+            <tr>
+                <td>2022-23</td>
+                <td>Lakers</td>
+                <td>55</td>
+                <td>28.9</td>
+                <td>8.3</td>
+                <td>6.8</td>
+            </tr>
+            <tr>
+                <td>2021-22</td>
+                <td>Lakers</td>
+                <td>56</td>
+                <td>30.3</td>
+                <td>8.2</td>
+                <td>6.2</td>
+            </tr>
+        </table>
+    </div>
+    <div id="ความสำคัญ" class="page">
+        <h1>ความสำคัญ ของเคื่องกระทบ</h1>
+        <p>เตรื่องกระทบเป็นเครื่องที่ใหเจังหวะของวงซึ่งมีความสำคัญเป็นอย่างมาก และเป็นเครื่องที่้สร้างเสียงเอ็กเฟกต่างๆ ให้กับเพลง ทั้งนี้ยังมีเครื่องกระทบอีกหลายชนิด จึงเกิดวงญำพแีกกรนื ขึ้นมา
+            <img src="images/istockphoto-1340067724-612x612.jpg">
+    <div
+     id="contact" class="page">
+        <h1>ติดต่อเรา</h1>
+        <p>สอบถามเพิ่มเติมได้ที่</p>
+        <p>000-000-000</p>
+    </div>
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
